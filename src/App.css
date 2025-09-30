@@ -1,0 +1,222 @@
+/* Link styles */
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+/* Headings */
+header h1 {
+  font-family: "UnifrakturCook", cursive;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 5vw;
+  line-height: 1.1;
+  text-shadow: 0 0 10px #7cac6c, 0 0 20px #7cac6c, 0 0 30px #7cac6c;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #8bc34a, 0 0 20px #8bc34a, 0 0 30px #8bc34a;
+  }
+  to {
+    text-shadow: 0 0 20px #8bc34a, 0 0 30px #8bc34a, 0 0 40px #8bc34a;
+  }
+}
+
+h2 {
+  font-family: "UnifrakturCook", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.2em;
+  margin-bottom: 0;
+  color: #7cac6c;
+}
+
+h3 {
+  margin: 1rem;
+}
+
+/* Root wrapper */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7cac6c;
+  border-radius: 0 0 5px 5px;
+  height: 50px;
+}
+
+.nav-item {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  color: #000000;
+}
+
+/* Buttons */
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #7cac6c;
+}
+
+.index {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  border: 1px solid #7cac6c;
+  padding: 0.2em 1em;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  background-color: white;
+}
+
+.page-button {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fefefe;
+  /* border: solid 1px gray; */
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.card-button {
+  width: 100%;
+  border-top: 1px solid #7cac6c;
+  background-color: white;
+  border-radius: 0;
+  font-size: 0.8rem;
+}
+
+/* Grid layout */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Cards */
+
+.card {
+  padding: 1em;
+  background-color: #fefefe;
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex: 1 1 calc(50% - 1.5rem);
+  box-shadow: rgba(224, 224, 224) 0px 5px 15px;
+  height: fit-content;
+}
+
+#card-spell {
+  flex: 1 1 calc(33.333% - 1.5rem);
+}
+
+#card-monster {
+  flex: 1 1 calc(50% - 1.5rem);
+}
+
+/* Images */
+.monster-image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 5px;
+}
+
+#banner {
+  width: 100%;
+  aspect-ratio: 4 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Banner text */
+.banner-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Page sections */
+section {
+  padding-top: 1rem;
+}
+
+.description {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.home-page {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  box-shadow: rgba(224, 224, 224) 0px 5px 15px;
+}
+
+.home-page h2,
+.home-page h4 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Tables */
+tbody {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+table {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.bold-text {
+  font-weight: bold;
+}
