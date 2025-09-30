@@ -38,7 +38,7 @@ fe-react-data-visualisation/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/bluesky2006/fe-react-data-visualisation.git
+git clone https://github.com/bluesky2006/dnd-api-explorer.git
 cd fe-react-data-visualisation
 ```
 
